@@ -1,0 +1,13 @@
+{
+  "tool": "antigravity",
+  "version": 1,
+  "sourceOfTruth": {
+    "workspaceRules": "../AGENTS.md",
+    "engineering": "../agents/ENGINEERING.md",
+    "testing": "../agents/TESTING.md"
+  },
+  "notes": [
+    "Compatibility layer only.",
+    "Do not duplicate shared policy text here."
+  ]
+}

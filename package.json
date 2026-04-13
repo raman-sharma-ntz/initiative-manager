@@ -1,0 +1,44 @@
+{
+  "name": "nextjs-app-clerk-hygraph-excel",
+  "private": true,
+  "version": "1.0.0",
+
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "validate:agent-configs": "node scripts/validate-agent-configs.mjs",
+    "precommit": "pnpm validate:agent-configs && pnpm lint && pnpm typecheck",
+    "commitmsg": "node scripts/validate-commit-msg.mjs",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@clerk/nextjs": "^4.29.2",
+    "@mui/material": "^5.13.6",
+    "@tanstack/react-query": "^4.35.6",
+    "exceljs": "^4.3.0",
+    "googleapis": "^130.0.0",
+    "graphql-request": "^7.4.0",
+    "next": "14.1.0",
+    "postcss": "^8.5.9",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "yup": "^1.2.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@clerk/clerk-sdk-node": "^5.1.6",
+    "@hygraph/management-sdk": "^1.5.2",
+    "@tailwindcss/postcss": "^4.1.11",
+    "@types/node": "^20.5.9",
+    "@types/react": "^18.2.21",
+    "dotenv": "^17.4.1",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "14.1.0",
+    "husky": "^9.1.7",
+    "tailwindcss": "^4.1.11",
+    "typescript": "^5.2.2"
+  }
+}

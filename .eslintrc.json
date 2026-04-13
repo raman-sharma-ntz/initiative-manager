@@ -1,0 +1,7 @@
+{
+  "extends": ["next/core-web-vitals"],
+  "rules": {
+    "func-style": ["error", "expression", { "allowArrowFunctions": true }],
+    "prefer-arrow-callback": ["error", { "allowNamedFunctions": false, "allowUnboundThis": true }]
+  }
+}

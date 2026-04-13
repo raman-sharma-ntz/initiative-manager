@@ -1,0 +1,623 @@
+[
+  {
+    "name": "Aggregate",
+    "fields": [
+      "count"
+    ]
+  },
+  {
+    "name": "AppUser",
+    "fields": [
+      "stage",
+      "documentInStages",
+      "publishedAt",
+      "updatedAt",
+      "createdAt",
+      "id",
+      "clerkId",
+      "email",
+      "name",
+      "publishedBy",
+      "updatedBy",
+      "createdBy",
+      "ledTeam",
+      "teams",
+      "assignedTickets",
+      "createdTickets",
+      "role",
+      "scheduledIn",
+      "history"
+    ]
+  },
+  {
+    "name": "AppUserConnection",
+    "fields": [
+      "pageInfo",
+      "edges",
+      "aggregate"
+    ]
+  },
+  {
+    "name": "AppUserEdge",
+    "fields": [
+      "node",
+      "cursor"
+    ]
+  },
+  {
+    "name": "AppUserOrderByInput",
+    "fields": []
+  },
+  {
+    "name": "Asset",
+    "fields": [
+      "stage",
+      "locale",
+      "localizations",
+      "documentInStages",
+      "mimeType",
+      "size",
+      "width",
+      "height",
+      "fileName",
+      "handle",
+      "publishedAt",
+      "updatedAt",
+      "createdAt",
+      "id",
+      "publishedBy",
+      "updatedBy",
+      "createdBy",
+      "scheduledIn",
+      "history",
+      "upload",
+      "url"
+    ]
+  },
+  {
+    "name": "AssetConnection",
+    "fields": [
+      "pageInfo",
+      "edges",
+      "aggregate"
+    ]
+  },
+  {
+    "name": "AssetEdge",
+    "fields": [
+      "node",
+      "cursor"
+    ]
+  },
+  {
+    "name": "AssetOrderByInput",
+    "fields": []
+  },
+  {
+    "name": "AssetUpload",
+    "fields": [
+      "requestPostData",
+      "error",
+      "status",
+      "expiresAt"
+    ]
+  },
+  {
+    "name": "AssetUploadError",
+    "fields": [
+      "code",
+      "message"
+    ]
+  },
+  {
+    "name": "AssetUploadRequestPostData",
+    "fields": [
+      "url",
+      "date",
+      "key",
+      "signature",
+      "algorithm",
+      "policy",
+      "credential",
+      "securityToken"
+    ]
+  },
+  {
+    "name": "AssetUploadStatus",
+    "fields": []
+  },
+  {
+    "name": "BatchPayload",
+    "fields": [
+      "count"
+    ]
+  },
+  {
+    "name": "Color",
+    "fields": [
+      "hex",
+      "rgba",
+      "css"
+    ]
+  },
+  {
+    "name": "DocumentFileTypes",
+    "fields": []
+  },
+  {
+    "name": "DocumentVersion",
+    "fields": [
+      "id",
+      "stage",
+      "revision",
+      "createdAt",
+      "data"
+    ]
+  },
+  {
+    "name": "EntityTypeName",
+    "fields": []
+  },
+  {
+    "name": "ImageFit",
+    "fields": []
+  },
+  {
+    "name": "Locale",
+    "fields": []
+  },
+  {
+    "name": "Location",
+    "fields": [
+      "latitude",
+      "longitude",
+      "distance"
+    ]
+  },
+  {
+    "name": "Mutation",
+    "fields": [
+      "createProgram",
+      "updateProgram",
+      "deleteProgram",
+      "upsertProgram",
+      "publishProgram",
+      "unpublishProgram",
+      "updateManyProgramsConnection",
+      "deleteManyProgramsConnection",
+      "publishManyProgramsConnection",
+      "unpublishManyProgramsConnection",
+      "schedulePublishProgram",
+      "scheduleUnpublishProgram",
+      "createAsset",
+      "updateAsset",
+      "deleteAsset",
+      "upsertAsset",
+      "publishAsset",
+      "unpublishAsset",
+      "updateManyAssetsConnection",
+      "deleteManyAssetsConnection",
+      "publishManyAssetsConnection",
+      "unpublishManyAssetsConnection",
+      "schedulePublishAsset",
+      "scheduleUnpublishAsset",
+      "deleteScheduledOperation",
+      "createScheduledRelease",
+      "updateScheduledRelease",
+      "deleteScheduledRelease",
+      "createAppUser",
+      "updateAppUser",
+      "deleteAppUser",
+      "upsertAppUser",
+      "publishAppUser",
+      "unpublishAppUser",
+      "updateManyAppUsersConnection",
+      "deleteManyAppUsersConnection",
+      "publishManyAppUsersConnection",
+      "unpublishManyAppUsersConnection",
+      "schedulePublishAppUser",
+      "scheduleUnpublishAppUser",
+      "createTeam",
+      "updateTeam",
+      "deleteTeam",
+      "upsertTeam",
+      "publishTeam",
+      "unpublishTeam",
+      "updateManyTeamsConnection",
+      "deleteManyTeamsConnection",
+      "publishManyTeamsConnection",
+      "unpublishManyTeamsConnection",
+      "schedulePublishTeam",
+      "scheduleUnpublishTeam",
+      "createTicket",
+      "updateTicket",
+      "deleteTicket",
+      "upsertTicket",
+      "publishTicket",
+      "unpublishTicket",
+      "updateManyTicketsConnection",
+      "deleteManyTicketsConnection",
+      "publishManyTicketsConnection",
+      "unpublishManyTicketsConnection",
+      "schedulePublishTicket",
+      "scheduleUnpublishTicket"
+    ]
+  },
+  {
+    "name": "PageInfo",
+    "fields": [
+      "hasNextPage",
+      "hasPreviousPage",
+      "startCursor",
+      "endCursor",
+      "pageSize"
+    ]
+  },
+  {
+    "name": "Program",
+    "fields": [
+      "stage",
+      "documentInStages",
+      "publishedAt",
+      "updatedAt",
+      "createdAt",
+      "id",
+      "name",
+      "description",
+      "publishedBy",
+      "updatedBy",
+      "createdBy",
+      "tickets",
+      "scheduledIn",
+      "history"
+    ]
+  },
+  {
+    "name": "ProgramConnection",
+    "fields": [
+      "pageInfo",
+      "edges",
+      "aggregate"
+    ]
+  },
+  {
+    "name": "ProgramEdge",
+    "fields": [
+      "node",
+      "cursor"
+    ]
+  },
+  {
+    "name": "ProgramOrderByInput",
+    "fields": []
+  },
+  {
+    "name": "Query",
+    "fields": [
+      "node",
+      "entities",
+      "programs",
+      "program",
+      "programsConnection",
+      "programVersion",
+      "users",
+      "user",
+      "usersConnection",
+      "assets",
+      "asset",
+      "assetsConnection",
+      "assetVersion",
+      "scheduledOperations",
+      "scheduledOperation",
+      "scheduledOperationsConnection",
+      "scheduledReleases",
+      "scheduledRelease",
+      "scheduledReleasesConnection",
+      "appUsers",
+      "appUser",
+      "appUsersConnection",
+      "appUserVersion",
+      "teams",
+      "team",
+      "teamsConnection",
+      "teamVersion",
+      "tickets",
+      "ticket",
+      "ticketsConnection",
+      "ticketVersion"
+    ]
+  },
+  {
+    "name": "RGBA",
+    "fields": [
+      "r",
+      "g",
+      "b",
+      "a"
+    ]
+  },
+  {
+    "name": "RichText",
+    "fields": [
+      "raw",
+      "html",
+      "markdown",
+      "text"
+    ]
+  },
+  {
+    "name": "Role",
+    "fields": []
+  },
+  {
+    "name": "ScheduledOperation",
+    "fields": [
+      "stage",
+      "documentInStages",
+      "rawPayload",
+      "errorMessage",
+      "description",
+      "publishedAt",
+      "updatedAt",
+      "createdAt",
+      "id",
+      "release",
+      "publishedBy",
+      "updatedBy",
+      "createdBy",
+      "status",
+      "affectedDocuments"
+    ]
+  },
+  {
+    "name": "ScheduledOperationConnection",
+    "fields": [
+      "pageInfo",
+      "edges",
+      "aggregate"
+    ]
+  },
+  {
+    "name": "ScheduledOperationEdge",
+    "fields": [
+      "node",
+      "cursor"
+    ]
+  },
+  {
+    "name": "ScheduledOperationOrderByInput",
+    "fields": []
+  },
+  {
+    "name": "ScheduledOperationStatus",
+    "fields": []
+  },
+  {
+    "name": "ScheduledRelease",
+    "fields": [
+      "stage",
+      "documentInStages",
+      "releaseAt",
+      "isImplicit",
+      "isActive",
+      "errorMessage",
+      "description",
+      "title",
+      "publishedAt",
+      "updatedAt",
+      "createdAt",
+      "id",
+      "operations",
+      "publishedBy",
+      "updatedBy",
+      "createdBy",
+      "status"
+    ]
+  },
+  {
+    "name": "ScheduledReleaseConnection",
+    "fields": [
+      "pageInfo",
+      "edges",
+      "aggregate"
+    ]
+  },
+  {
+    "name": "ScheduledReleaseEdge",
+    "fields": [
+      "node",
+      "cursor"
+    ]
+  },
+  {
+    "name": "ScheduledReleaseOrderByInput",
+    "fields": []
+  },
+  {
+    "name": "ScheduledReleaseStatus",
+    "fields": []
+  },
+  {
+    "name": "Stage",
+    "fields": []
+  },
+  {
+    "name": "SystemDateTimeFieldVariation",
+    "fields": []
+  },
+  {
+    "name": "Team",
+    "fields": [
+      "stage",
+      "documentInStages",
+      "publishedAt",
+      "updatedAt",
+      "createdAt",
+      "id",
+      "name",
+      "publishedBy",
+      "updatedBy",
+      "createdBy",
+      "lead",
+      "members",
+      "tickets",
+      "scheduledIn",
+      "history"
+    ]
+  },
+  {
+    "name": "TeamConnection",
+    "fields": [
+      "pageInfo",
+      "edges",
+      "aggregate"
+    ]
+  },
+  {
+    "name": "TeamEdge",
+    "fields": [
+      "node",
+      "cursor"
+    ]
+  },
+  {
+    "name": "TeamOrderByInput",
+    "fields": []
+  },
+  {
+    "name": "Ticket",
+    "fields": [
+      "stage",
+      "documentInStages",
+      "publishedAt",
+      "updatedAt",
+      "createdAt",
+      "id",
+      "title",
+      "description",
+      "points",
+      "publishedBy",
+      "updatedBy",
+      "createdBy",
+      "initiative",
+      "team",
+      "assignee",
+      "author",
+      "ticketStatus",
+      "priority",
+      "visibility",
+      "scheduledIn",
+      "history"
+    ]
+  },
+  {
+    "name": "TicketConnection",
+    "fields": [
+      "pageInfo",
+      "edges",
+      "aggregate"
+    ]
+  },
+  {
+    "name": "TicketEdge",
+    "fields": [
+      "node",
+      "cursor"
+    ]
+  },
+  {
+    "name": "TicketOrderByInput",
+    "fields": []
+  },
+  {
+    "name": "TicketPriority",
+    "fields": []
+  },
+  {
+    "name": "TicketStatus",
+    "fields": []
+  },
+  {
+    "name": "TicketVisibility",
+    "fields": []
+  },
+  {
+    "name": "User",
+    "fields": [
+      "stage",
+      "documentInStages",
+      "isActive",
+      "picture",
+      "name",
+      "publishedAt",
+      "updatedAt",
+      "createdAt",
+      "id",
+      "kind"
+    ]
+  },
+  {
+    "name": "UserConnection",
+    "fields": [
+      "pageInfo",
+      "edges",
+      "aggregate"
+    ]
+  },
+  {
+    "name": "UserEdge",
+    "fields": [
+      "node",
+      "cursor"
+    ]
+  },
+  {
+    "name": "UserKind",
+    "fields": []
+  },
+  {
+    "name": "UserOrderByInput",
+    "fields": []
+  },
+  {
+    "name": "Version",
+    "fields": [
+      "id",
+      "stage",
+      "revision",
+      "createdAt"
+    ]
+  },
+  {
+    "name": "_FilterKind",
+    "fields": []
+  },
+  {
+    "name": "_MutationInputFieldKind",
+    "fields": []
+  },
+  {
+    "name": "_MutationKind",
+    "fields": []
+  },
+  {
+    "name": "_OrderDirection",
+    "fields": []
+  },
+  {
+    "name": "_RelationInputCardinality",
+    "fields": []
+  },
+  {
+    "name": "_RelationInputKind",
+    "fields": []
+  },
+  {
+    "name": "_RelationKind",
+    "fields": []
+  },
+  {
+    "name": "_SystemDateTimeFieldVariation",
+    "fields": []
+  }
+]
