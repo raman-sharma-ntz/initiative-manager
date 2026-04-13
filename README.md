@@ -20,6 +20,15 @@ Initiative Manager is a secure, modular Next.js App Router project with RBAC, va
 - Zod-based schema validation for server-side payload checks
 - Arrow-function coding style across the codebase
 
+## 🛠 Tech Stack & Tools
+
+- **Framework**: Next.js (App Router)
+- **Database / CMS**: Hygraph (Headless GraphQL CMS used as the primary database instead of traditional SQL like PostgreSQL)
+- **Authentication & Identity**: Clerk (Handles auth, identity linking, roles, and Google OAuth instead of a custom auth solution)
+- **AI Integration**: Gemini API (Used as the primary AI assistant for JSON-driven automation and document generation)
+- **Validation**: Zod (For rigorous server-side payload and schema validation)
+- **Language**: TypeScript
+
 ## Getting Started
 
 1. Install dependencies: `pnpm install`
