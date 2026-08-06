@@ -22,7 +22,7 @@
     "googleapis": "^130.0.0",
     "graphql-request": "^7.4.0",
     "next": "15.5.15",
-    "postcss": "^8.5.9",
+    "postcss": "^8.5.23",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "yup": "^1.2.0",
